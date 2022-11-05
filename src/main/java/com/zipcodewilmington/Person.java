@@ -13,6 +13,7 @@ public class Person {
     }
 
     // why is this called a GETTER??
+    //This is called a getter because it returns the value of firstName.
     public String getFirstName() {
         return firstName;
     }
@@ -22,6 +23,7 @@ public class Person {
     }
 
     @Override // why is Override here??
+    //Override will replace the toString method with a custom string instead of the default
     public String toString() {
         return new StringBuilder()
                 .append("\nMy first name is " + firstName)
